@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* boxlevel */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+           
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            
+            border: 10px solid darkslategray;
+
+            padding: 10px; /*se todos forem iguais, colocar somente 1, quando bota 2 medidas, os paralelos serao iguais*/
+            
+            margin: 20px auto 40px auto;
+           
+            outline: 5px dashed salmon;
+        }
+
+        a { /* inline-level */
+            border: 10px solid red ;
+          
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>
+    Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
+
+
+/* height - altura
+    width - largura
+    border - borda
+    padding (dentro da borda)- preenchimento
+    margin (fora da borda)- margem
+    outline (fora da borda) - traçado
+
+
+    tipos de caixa: 
+box level:
+    se inicia em uma nova linha e ocupa a largura total da tela
+tag: div, h1 - h6, p, main, header, nav, article, aside, footer, form, video
+
+
+inline level:
+    continua ao lado do parágrago, e não quebra a linha
+tag: span, a, code, small, strong, em, sup, sub, lavel, button, input, select
+*/
